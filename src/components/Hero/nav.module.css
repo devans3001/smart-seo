@@ -1,0 +1,32 @@
+.parent .child {
+  position: absolute;
+  left: -2em;
+  z-index: 11;
+  background-color: #080370;
+  width: 15em;
+  border-radius: 30px;
+  display: none;
+  top: 3em;
+  animation: love 0.3s ease-in-out;
+}
+.parent .child li {
+  font-size: 0.9em;
+}
+@keyframes love {
+  0% {
+    top: 10em;
+    opacity: 0;
+  }
+  100% {
+    top: 3em;
+    opacity: 1;
+  }
+}
+.parent .child li {
+  padding: 0.5em 1.5em;
+}
+
+.parent:hover .child {
+  display: block;
+  transition: all 1s;
+}/*# sourceMappingURL=nav.module.css.map */
